@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+Output
+{% endblock %}
+{% block body %}
+<h2>Your name  is {{data.name}}<br>
+    Date of birth is {{data.dob}}<br></h2>
+    <h1 style="color:red">Marks</h1><br>
+    <h2>Physics:{{data.physics}}<br>
+    Chemistry:{{data.chemistry}}<br>
+    Maths:{{data.maths}}<br>
+    Computer science:{{data.computerscience}}<br>
+    Total percentage:{{data.percentage}}</h2>
+{% endblock %}

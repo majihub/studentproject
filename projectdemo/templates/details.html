@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}
+Input
+{% endblock %}
+{% block body %}
+<form method="post">
+    {% csrf_token %}
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" placeholder="Enter your date of birth"><br>
+    <label for="physics">Physics:</label>
+    <input type="text" id="physics" name="physics" placeholder="Enter your physics mark out of 100"><br>
+    <label for="chemistry">Chemistry:</label>
+    <input type="text" id="chemistry" name="chemistry" placeholder="Enter your chemistry mark out of 100"><br>
+    <label for="maths">Maths:</label>
+    <input type="text" id="maths" name="maths" placeholder="Enter your maths mark out of 100"><br>
+    <label for="cmp">Computerscience:</label>
+    <input type="text" id="cmp" name="cmp" placeholder="Enter your computer science mark out of 100"><br>
+    <input type="submit" name="submit" value="Submit">
+</form>
+{% endblock %}
